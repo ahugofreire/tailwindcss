@@ -8,7 +8,7 @@ export function FileList() {
   const { files } = useFileInput()
 
   return (
-    <div>
+    <div className="mt-4 space-y-3">
       {files.map((file) => {
         return (
           <div
@@ -35,7 +35,7 @@ export function FileList() {
               </div>
             </div>
 
-            <button type="button" className="ml-auto rounded-md p-2 hover:bg-zinc-50">
+            <button type="button" className="ml-auto rounded-md p-2  hover:bg-zinc-50">
               <Trash2 className="h-5 w-5 text-zinc-500" />
             </button>
           </div>
